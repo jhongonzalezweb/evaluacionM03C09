@@ -1,0 +1,52 @@
+body {
+    background: #232323;
+}
+
+h1 {
+    color: white;
+    font-size: 250%;
+}
+.square {
+    float: left;
+    width: 30%;
+    height: 0;
+    padding-bottom: 30%;
+    color: aqua;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+
+.container {
+    
+    margin: 0 auto;
+    width: 600px;
+    border-radius: 10px;
+}
+
+#aggColorRGB {
+    color: white
+}
+
+#colorDisplay{
+    display: block;
+    font-size: 200%
+}
+
+#message {
+    color: white;
+    font-size: 35px;
+}
+
+button {
+    color: white;
+    font-size: 50px;
+    background-color: #232323;
+    font-weight: bold;
+    border: 1px solid #232323;
+}
+
+button:hover {
+    background-color: #232323;
+    color: gold;
+}
