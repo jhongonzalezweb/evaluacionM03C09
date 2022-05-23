@@ -19,11 +19,12 @@ function iniciarElJuegoMomentaneamente() {
         const resutaldoDelColor = asignarColoresTarjetas()
         squares[i].style.backgroundColor = resutaldoDelColor;
         colors.push(squares[i].style.backgroundColor);
-
     }
+
 
     colorsRandom = colors[Math.floor(Math.random() * numeroCuadrados)];
     document.getElementById("aggColorRGB").innerHTML = colorsRandom;
+    // console.log(colorsRandom);
 
     function detectarClick(squareTal) {
         squareTal.addEventListener("click", function () {
@@ -62,6 +63,7 @@ function iniciarElJuegoMomentaneamente() {
 
 }
 
+
 iniciarElJuegoMomentaneamente()
 
 function reiniciar() {
@@ -69,13 +71,10 @@ function reiniciar() {
 }
 
 function easyGame() {
-    let rgb = "#232323";
     numeroCuadrados = 3;
-    console.log(numeroCuadrados);
-    document.getElementById("del01").style.backgroundColor = rgb;
-    document.getElementById("del02").style.backgroundColor = rgb;
-    document.getElementById("del03").style.backgroundColor = rgb;
-
+    document.getElementById("del01").style.visibility = "hidden";
+    document.getElementById("del02").style.visibility = "hidden";
+    document.getElementById("del03").style.visibility = "hidden";
     colorsRandom = colors[Math.floor(Math.random() * 3)];
     document.getElementById("aggColorRGB").innerHTML = colorsRandom;
     console.log(colorsRandom);
